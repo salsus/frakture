@@ -3,6 +3,7 @@ select
 , substring(substring_index(description, '-', 2), 11) campaign
 , d.description
 , d.source_code
+, d.source_label
 , program
 , round(sum(COALESCE(e.sent)),0) sent
 , round(sum(COALESCE(e.opened)),0) opened
